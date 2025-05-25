@@ -39,7 +39,7 @@ export const App: React.FC = () => {
     }
   });
 
-  const visibleGoods = isReversed ? sortedGoods.reverse() : sortedGoods;
+  const visibleGoods = isReversed ? [...sortedGoods].reverse() : sortedGoods;
 
   const handleSort = (field: SortType) => {
     setSortedField(field);
